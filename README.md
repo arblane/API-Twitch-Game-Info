@@ -2,7 +2,7 @@
 Utility to use with Get User Clips to extract game information from a clip. Requires clip information from [API] Get User Clips. This will use the Twitch Clip ID to retrieve details about the game associated with the clip.
 
 # Compatibility
-- Firebot 5.59.2+
+- Firebot 5.58.0+
 
 # Install
 + Download 
