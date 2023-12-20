@@ -1,13 +1,14 @@
 # API Twitch Game Info
 Utility to use with Get User Clips to extract game information from a clip. Requires clip information from [API] Get User Clips. This will use the Twitch Clip ID to retrieve details about the game associated with the clip.
 
-# Requirement
-- Firebot 5.58.0
+# Compatibility
+- Firebot 5.59.2+
 
 # Install
-+ Download API Twitch Game Info.firebotsetup
++ Download 
+  + API Twitch Game Info.firebotsetup
 + Import the downloaded file
-  + Preset Effect List will be named [API] Get Twitch Game Info by Id (Depends on [API] Get User Clips)
+  + Preset Effect List will be named '[API] Get Twitch Game Info by Id' (Depends on [API] Get User Clips)
 
 # Usage
 Use the custom variable twitchGameData elements to display details.
