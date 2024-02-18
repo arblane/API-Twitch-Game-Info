@@ -1,7 +1,7 @@
 {
   "name": "API Twitch Game Info",
   "description": "Utility to use with Get User Clips to extract game information from a clip. Requires [API] Get User Clips to function.",
-  "version": 1,
+  "version": 1.1,
   "author": "arblane",
   "components": {
     "commands": [],
@@ -96,6 +96,17 @@
               "variableData": "$replace[$customVariable[twitchGameData,0.box_art_url], \"{width}x{height}\", \"50x50\"]",
               "name": "boxArtUrl",
               "effectLabel": "boxArtUrl"
+            },
+            {
+              "id": "f57f7010-56f5-11ee-a5d5-2f1d6b6d5b1d",
+              "type": "firebot:filewriter",
+              "active": false,
+              "writeMode": "append",
+              "deleteLineMode": "lines",
+              "replaceLineMode": "lineNumbers",
+              "filepath": "E:\\Streaming\\data\\twitchClip.json",
+              "text": "GameInfo - $customVariable[twitchGameData,0]",
+              "effectLabel": "debug"
             }
           ],
           "id": "28e99d81-2bc3-11ee-95cd-a1b91b9c8cf9"
@@ -103,7 +114,8 @@
         "args": [],
         "sortTags": [
           "75e6a3bc-a3d9-47a9-9136-63a957f2b106",
-          "4ec259a1-f622-4d17-881c-b3031774dbc4"
+          "4ec259a1-f622-4d17-881c-b3031774dbc4",
+          "bddb2559-cc79-474c-bb91-d22f2165b7d2"
         ],
         "id": "28e99d80-2bc3-11ee-95cd-a1b91b9c8cf9"
       }
